@@ -1,0 +1,205 @@
+
+*{
+    margin: 0;
+    padding: 0;
+    outline: 0;
+    box-sizing: border-box;
+    text-decoration: none;
+    list-style: none;
+    overflow-x: hidden;
+}
+a{
+    color: black;
+}
+.container{
+    width: 90%;
+    margin: 0 auto;
+}
+header{
+    width: 100%;
+    height: 10vh;
+    padding: 10px 20px;
+    background-color: rgb(191, 172, 159);
+    position: fixed;
+    z-index: 111;
+}
+header .container{
+    
+    /* background-color: aquamarine; */
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+header .container .logo h1{
+    text-transform: uppercase;
+}
+header .container nav ul{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    column-gap: 30px;
+}
+
+
+
+
+/* banner */
+
+main{
+    width: 600%;
+    height: 60vh;
+    /* background-color: blueviolet; */
+    position: absolute;
+    margin-top: 10vh;
+}
+main .slide-container{
+    width: 100%;
+    display: flex;
+}
+main .slide-container .slide{
+    width: 100vw;
+    overflow-x: visible;
+}
+main .slide-container .slide img{
+    width: 100%;
+    height: 59vh;
+    animation: slide infinite running 16s;
+}
+
+@keyframes slide{
+    25%{
+        margin-left: -100%;
+    }
+    50%{
+        margin-left: -200%;
+    }
+    75%{
+        margin-left: -300%;
+    }
+    100%{
+        margin-left: -400%;
+    }
+}
+
+
+/* service section */
+
+.services{
+    width: 100%;
+    height: 30vh;
+    position: absolute;
+    margin-top: 69vh;
+    background-color: rgb(153, 142, 142);
+    padding: 20px 0;
+    overflow-y: hidden;
+}
+
+.services .service-container{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    gap: 20px;
+
+}
+.services .service-container .section-title{
+    background-color: antiquewhite;
+    width: fit-content;
+    text-align: center;
+    margin-bottom: 20px;
+}
+.services .service-container .section-title h2{
+    width: fit-content;
+    height: fit-content;
+    padding: 10px 20px;
+}
+.services .cards-container{
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+    gap: 60px;
+}
+.services .cards-container .card{
+    width: 20%;
+    height: 60px;
+    background-color: rgb(205, 249, 249);
+    text-align: center;
+    padding: 10px 20px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+/* service section end*/
+
+
+/* product section end*/
+
+.products{
+    position: absolute;
+    top: 99vh;
+    width: 100%;
+    padding: 10px 0;
+}
+.products .container{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    gap: 10px;
+}
+.products .section-title{
+    width: fit-content;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    gap: 10px;
+    padding: 10px 20px;
+    background-color: rgb(255, 189, 76);
+}
+.products .cards-container{
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    /* background-color: rgb(65, 170, 170); */
+    height: 200px;
+    overflow-y: hidden;
+    
+}.products .cards-container .card{
+    width: 24%;
+    height: 300px;
+    background-color: azure;
+    text-align: left;
+    overflow-y: hidden;
+}
+.products .cards-container .card img{
+    width: 100%;
+    height: 90%;
+    
+}
+/* product section end*/
+
+/* footer */
+
+
+footer{
+    width: 100%;
+    height: 10vh;
+    position: absolute;
+    margin-top: 150vh;
+    background-color: darkgrey;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    color: rgb(68, 68, 43);
+}
+
+
+/* changes to make --- color combination is not good , 
+header position fixed ; 
+top:0 
+and make other sections relative in place of absolute 
+add scroll effect html-behaviour:scroll; 
+make it responsive */
