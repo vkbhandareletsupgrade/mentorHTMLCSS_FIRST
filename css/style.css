@@ -195,6 +195,12 @@ footer{
     align-items: center;
     color: rgb(68, 68, 43);
 }
+footer ul{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap:30px;
+}
 
 
 /* changes to make --- color combination is not good , 
